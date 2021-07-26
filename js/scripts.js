@@ -23,7 +23,7 @@ const startApp = () => {
   const searchWeather = async (city) => {
     try {
       toggleLoad();
-      const searchQuery = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=ef2baee52d51ed3ba7f6526f591cbe2e`;
+      const searchQuery = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=ef2baee52d51ed3ba7f6526f591cbe2e`;
       const response = await fetch(searchQuery, {
         mode: 'cors'
       });
